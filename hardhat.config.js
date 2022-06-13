@@ -5,7 +5,7 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     goerli: {
-      url: "https://eth-goerli.alchemyapi.io/v2/AQSgNzP9wG58_rdyO60mwXNV4eVjX_zc",
+      url: `https://eth-goerli.alchemyapi.io/v2/${process.env.ALCHEMY_API_KEY}`,
       accounts: [`${process.env.ACCOUNT_PKEY}`]
     }
   }
